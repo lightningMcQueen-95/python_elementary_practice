@@ -1,0 +1,4 @@
+marks = {}.fromkeys(['Math', 'English', 'Science'], 0)
+
+# Output: {'English': 0, 'Math': 0, 'Science': 0}
+print(marks)

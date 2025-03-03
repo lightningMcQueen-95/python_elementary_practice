@@ -1,0 +1,55 @@
+# Different types of tuples
+
+# Empty tuple
+my_tuple = ()
+print(my_tuple)
+
+# Tuple having integers
+my_tuple = (1, 2, 3)
+print(my_tuple)
+
+# tuple with mixed datatypes
+my_tuple = (1, "Hello", 3.4)
+print(my_tuple)
+
+# nested tuple
+my_tuple = ("mouse", [8, 4, 6], (1, 2, 3))
+print(my_tuple)
+
+
+#Indexing
+my_tuple = ('p', 'e', 'r', 'm', 'i', 't')
+
+print(my_tuple[0])   
+print(my_tuple[5])   
+
+# IndexError: list index out of range
+print(my_tuple[6])
+
+#INDEXING FROM RIGHT TO LEFT
+print(my_tuple[-1])
+
+# Output: 'p'
+print(my_tuple[-6])
+
+# Index must be an integer
+# TypeError: list indices must be integers, not float
+print(my_tuple[2.0])
+
+# nested tuple
+n_tuple = ("mouse", [8, 4, 6], (1, 2, 3))
+
+# nested index
+print(n_tuple[0][3])  
+print(n_tuple[1][1])  
+
+#to find index number
+my_tuple = ('a', 'p', 'p', 'l', 'e',)
+print(my_tuple.index('l'))
+
+#to count the no. of item
+print(my_tuple.count('p'))
+
+# However, item of mutable element can be changed
+my_tuple[3] = 9
+print(my_tuple)
